@@ -1,0 +1,56 @@
+{
+    "name": "DMZPATH/Hexagon",
+    "type": "library",
+    "description": "ni",
+    "keywords": [
+        "DMZPATH",
+        "Hexagon"
+    ],
+    "homepage": "https://github.com/dmzpath/Hexagon",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patricio Di Muzio <DMZPATH>",
+            "email": ":dmzpath@patriciodimzuzio.com.ar",
+            "homepage": "www.patriciodimuzio.com.ar",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "*",
+        "vlucas/phpdotenv": "*",
+        "symfony/event-dispatcher": "^4.1",
+        "symfony/http-foundation": "^4.1",
+        "symfony/dependency-injection": "^4.1"
+    },
+    "require-dev": {
+        "behat/behat": "^3.5",
+        "phpunit/phpunit": "^7.4",
+        "phpspec/phpspec": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DMZPathHexagon\\": "src",
+            "Hexagon\\App\\": "app"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hexagon\\Test\\": "test"
+        }
+    },
+    "config": {
+        "bin-dir": "bin",
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

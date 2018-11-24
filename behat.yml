@@ -1,0 +1,10 @@
+default:
+  autoload:
+    '': '%paths.base%/test/behavior'
+  suites:
+    user:
+      paths: [ '%paths.base%/test/behavior/user' ]
+      contexts: [ user\UserContext ]
+    hexagon:
+      paths: [ '%paths.base%/test/behavior/hexagon' ]
+      contexts: [ hexagon\HexagonContext ]
